@@ -10,10 +10,9 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testCompile group: 'org.testng', name: 'testng', version: '7.3.0'
-
+    testImplementation 'junit:junit:4.13'
 }
+
 test {
-    useTestNG()
+    useJUnit()
 }
